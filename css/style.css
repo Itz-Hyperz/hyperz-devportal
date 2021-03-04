@@ -1,1 +1,79 @@
+.body {
+  margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #172970;
+}
+
+.navbar {
+	display: flex;
+	width: 80%;
+	padding: 2vh 10%;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 5;
+	transition: all .5s ease;
+}
+
+.navbar.scrolled {
+	padding: 1vh 10%;
+	background-color: #0c151c;
+}
+
+.navbar.dropdownshown {
+	padding: 2vh 10%;
+	background-color: transparent;
+}
+
+.navbar .left {
+	width: 25%;
+}
+
+.navbar .left img {
+	height: 7.5vh;
+	width: auto;
+	opacity: 1;
+	transition: visibility .25s ease, opacity .25s ease;
+}
+
+.navbar.dropdownshown .left img {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.navbar .right {
+	width: 75%;
+	text-align: right;
+}
+
+.navbar .right a {
+	font-size: 2vh;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 2%;
+	position: relative;
+}
+
+.navbar .right a.dropdownbtn {
+	display: none;
+	font-size: 3vh;
+}
+
+.navbar .right .links a:after {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	width: 0%;
+	height: .25vh;
+	background-color: #fff;
+	margin-top: .5vh;
+	transition: width .3s ease;
+}
+
+.navbar .right .links a:hover:after, .navbar .right .links a.active:after {
+	width: 100%;
+}
+
 
