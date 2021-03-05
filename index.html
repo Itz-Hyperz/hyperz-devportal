@@ -7,7 +7,232 @@
 	<meta name="ognavbarcreator" content="https://jakehamblin.com/">
     <meta name="description" content="A simple place for Hyperz to showcase his github repos on his website.">
     <meta name="keywords" content="Hyperz, Panel, Dev, Developer, Portal, Github, OpenSource, Free, HTML">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+	    .body {
+  margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #172970;
+}
+
+.navbar {
+	display: flex;
+	width: 80%;
+	padding: 2vh 10%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 5;
+	transition: all .5s ease;
+}
+
+.navbar.scrolled {
+	padding: 1vh 10%;
+	background-color: #0c151c;
+}
+
+.navbar.dropdownshown {
+	padding: 2vh 10%;
+	background-color: transparent;
+}
+
+.navbar .left {
+	width: 25%;
+}
+
+.navbar .left img {
+	height: 7.5vh;
+	width: auto;
+	opacity: 1;
+	transition: visibility .25s ease, opacity .25s ease;
+}
+
+.navbar.dropdownshown .left img {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.navbar .right {
+	width: 75%;
+	text-align: right;
+}
+
+.navbar .right a {
+	font-size: 2.2vh;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 2%;
+	position: relative;
+}
+
+.navbar .right a.dropdownbtn {
+	display: none;
+	font-size: 3vh;
+}
+
+.navbar .right .links a:after {
+	position: absolute;
+	content: "";
+	top: 100%;
+	left: 0;
+	width: 0%;
+	height: .25vh;
+	background-color: #fff;
+	margin-top: .5vh;
+	transition: width .3s ease;
+}
+
+.navbar .right .links a:hover:after, .navbar .right .links a.active:after {
+	width: 100%;
+}
+
+.body .title1 {
+	color: white;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.body .img1 {
+	width: 285px;
+	height: 165px;
+	margin-top: 55px;
+	margin-left: 105px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img1:hover {
+	opacity: 0.7;
+}
+
+.body .img2 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 175px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img2:hover {
+	opacity: 0.7;
+}
+
+.body .img3 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 175px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img3:hover {
+	opacity: 0.7;
+}
+
+.body .img4 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 175px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img4:hover {
+	opacity: 0.7;
+}
+
+.body .img5 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 105px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img5:hover {
+	opacity: 0.7;
+}
+
+.body .img6 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 175px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img6:hover {
+	opacity: 0.7;
+}
+
+.body .img7 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 175px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img7:hover {
+	opacity: 0.7;
+}
+
+.body .img8 {
+	width: 285px;
+	height: 160px;
+	margin-top: 55px;
+	margin-left: 175px;
+	margin-right: auto;
+	border: 2px solid white;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: opacity .2s;
+}
+
+.body .img8:hover {
+	opacity: 0.7;
+}
+
+.body .footer {
+	background-color: #131313;
+	height: 75px;
+	margin-top: 200px;
+}
+
+.body .footer .footertext {
+	color: white;
+	font-size: 20px;
+	padding-top: 25px
+}
+
+    </style>
   </head>
   <body class="body">
   <section class="navbar">
